@@ -212,8 +212,9 @@ function QrScanner() {
               ref={videoRef}
               className="object-cover rounded-lg"
               style={{
-                transform: `scale(${1 + zoomLevel / 10})`,
+                transform: `scale(${1 + zoomLevel / 10}) translateZ(0)`,
                 willChange: "transform",
+                WebkitTransform: `scale(${1 + zoomLevel / 10}) translateZ(0)`,
               }}
             />
           </div>
